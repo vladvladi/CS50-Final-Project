@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="chat-container" data-room-code="{{ code }}" data-username="{{ user_name }}">
+    <!-- Main Chat Area -->
+    <div class="chat-main">
+        <div class="chat-header">
+            <h2>Chat Room: {{ code }}</h2>
+        </div>
+        
+        <div class="message-area" id="messages">
+            <!-- Messages will appear here -->
+        </div>
+        
+        <div class="message-input-container">
+            <input type="text" id="message-input" class="message-input" placeholder="Type your message..." autocomplete="off">
+            <button name="send" type="button" id="send-btn" class="send-btn" onclick="sendMessage()">SEND</button>
+        </div>
+    </div>
+    
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="room-info">
+            <h3>Room Info</h3>
+            <div class="info-item">
+                <span class="info-label">Room Code:</span>
+                <div class="code-copy-container">
+                    <span class="info-value" id="room-code">{{ code }}</span>
+                    <button class="copy-btn" onclick="copyRoomCode()" title="Copy room code">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Capacity:</span>
+                <span class="info-value">{{ room_size }}</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Members Online:</span>
+                <span class="info-value" id="members-count">{{ members_count }}</span>
+            </div>
+        </div>
+        <div class="leave-btn">
+            <button onclick="leaveRoom()">LEAVE</button>
+        </div>
+    </div>
+</div>
+
+<!-- Load message history from server -->
+<script id="message-history" type="application/json">
+    {{ messages | tojson }}
+</script>
+
+<script src="/static/js/room.js"></script>
+{% endblock %}

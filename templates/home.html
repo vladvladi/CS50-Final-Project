@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="home-container">
+    <div class="header">
+        <h1>CS50 Chat <span class="blink">_</span></h1>
+        <p class="tagline">Anonymous, Real-time Chat Rooms</p>
+    </div>
+
+    <div class="cards-wrapper">
+        <div class="card create-card">
+            <h2>Create Room</h2>
+            <form action="/chat" method="post">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" name="name" placeholder="Anonymous Panda" required>
+                </div>
+                <div class="form-group">
+                    <label>Capacity</label>
+                    <select name="room_size">
+                        <option value="2">2 Users</option>
+                        <option value="3">3 Users</option>
+                        <option value="4">4 Users</option>
+                        <option value="5">5 Users</option>
+                    </select>
+                </div>
+                <button type="submit" name="action" value="create" class="btn btn-primary">Create New</button>
+            </form>
+        </div>
+
+        <div class="divider">OR</div>
+
+        <div class="card join-card">
+            <h2>Join Room</h2>
+            <form action="/chat" method="post">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" name="name" placeholder="Silent Wolf" required>
+                </div>
+                <div class="form-group">
+                    <label>Room Code</label>
+                    <input type="text" name="code" placeholder="ABCD" autocomplete="off" required>
+                </div>
+                <button type="submit" name="action" value="join" class="btn btn-secondary">Join Existing</button>
+            </form>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="/static/images/logo.png" alt="CS50 Chat Logo" class="footer-logo">
+            </div>    
+            <div class="footer-section">
+                <h4>About</h4>
+                <p>
+                    CS50 Chat is a privacy-first messaging platform where conversations live only in memory. <br>
+                    Built for CS50x Final Project. <br>
+                    Focusing on anonymity and real-time communication using WebSockets.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="#" target="_blank">GitHub Repo</a></li>
+                    <li><a href="https://github.com/MakhijaniSahil" target="_blank">Developer Portfolio</a></li>
+                    <li><a href="https://cs50.harvard.edu/x/2025/" target="_blank">CS50 Course</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Disclaimer</h4>
+                <p>
+                    Chats are ephemeral and not stored permanently. <br>
+                    No data is collected or retained. Use responsibly and respectfully. <br>
+                    We are not responsible for user-generated content.
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 <a href="https://www.linkedin.com/in/sahil-makhijani-73230521a/" target="_blank" rel="noopener noreferrer">Sahil Makhijani</a>. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+{% endblock %}
