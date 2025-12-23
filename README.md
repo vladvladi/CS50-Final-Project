@@ -7,7 +7,7 @@
 ![Flask](https://img.shields.io/badge/Flask-3.0+-green.svg)
 ![Socket.IO](https://img.shields.io/badge/Socket.IO-Real--time-orange.svg)
 
-**[📹 Video Demo](INSERT_YOUR_VIDEO_URL_HERE)** | **[🚀 Quick Start](#-quick-start)** | **[📖 Documentation](#-project-structure)**
+**[📹 Video Demo](https://youtu.be/oM_d1Kqv-f4)** | **[🚀 Quick Start](#-quick-start)** | **[📖 Documentation](#-project-structure)**
 
 </div>
 
